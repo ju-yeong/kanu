@@ -1,0 +1,735 @@
+@import url(reset.css);
+@import url(commons.css);
+
+/* nav 메뉴 */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.gnb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnb li{
+    margin: 0 20px;
+}
+
+.gnb a{
+    color: #000;
+    transition: 0.3s;
+}
+
+.gnb a:hover{
+    color: red;
+}
+
+.btn{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+section{
+    position: relative;
+}
+
+.video-po{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.video{
+    width: 1903px;
+}
+
+.video-deco{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1070px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-deco::after{
+    content: '';
+    position: absolute;
+    top: 180px;
+    width: 1px;
+    height: 200px;
+    background-color: red;
+}
+
+.video-deco::before{
+    content: '';
+    position: absolute;
+    top: 690px;
+    width: 1px;
+    height: 200px;
+    background-color: red;
+}
+
+.video-text{
+    position: absolute;
+    text-align: center;
+    font-weight: 100;
+}
+
+.video-text h1{
+    color: red;
+    font-size: 6rem;
+    margin-bottom: 50px;
+}
+
+.video-text p{
+    font-size: 2rem;
+}
+
+.video-bg{
+    background-color: #fff;
+    width: 50%;
+    height: 500px;
+}
+
+/* sectiom00 */
+
+.section00{
+    padding: 100px 0 20px 0;
+}
+
+.section00 img{
+    width: 100%;
+}
+
+.product-main{
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.product-main img{
+    transition: all .3s;
+}
+
+.product-main img:hover{
+    transform: scale(1.2);
+}
+
+
+/* section02 */
+
+.section02{
+    margin: 250px 0;
+    /* background: url(../images/s02-bg.jpg); */
+}
+.sec02-img{
+    width: 50%;
+    height: 300px;
+    background-image: url(../images/coffee-bin.jpg);
+    background-size: cover;
+    margin-right: 30px;
+}
+.sec02-wrap{
+    width: 30%;
+}
+.section02 h1{
+    margin-bottom: 20px;
+}
+
+.section02 h5{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section02 span{
+    color: red;
+}
+
+/* section03 */
+
+.section03{
+    margin-bottom: 250px;
+}
+
+.box{
+    display: inline-block;
+}
+
+.sec03-div{
+    display: flex;
+}
+
+.s03-div{
+    position: relative;
+    width: 70px;
+    height: 370px;
+    transition: all .8s;
+}
+.s03-div>div{
+    background-repeat: no-repeat;
+}
+
+.s03-div:hover{
+    width: 325px;
+}
+
+/* section03 animation */
+/* a01 */
+.s03-div1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img1{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main01.png') center center;
+}
+
+.s03-div1 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+/* a02 */
+.s03-div2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img2{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main02.png') center center;
+}
+
+.s03-div2 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+
+/* a03 */
+.s03-div3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img3{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main03.png') center center;
+}
+
+.s03-div3 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+/* a04 */
+.s03-div4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img4{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main04.png') center center;
+}
+
+.s03-div4 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+/* a05 */
+.s03-div5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img5{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main05.png') center center;
+}
+
+.s03-div5 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+
+/* a06 */
+.s03-div6{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img6{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main06.png') center center;
+}
+
+.s03-div6 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+
+/* a07 */
+.s03-div7{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img7{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main07.png') center center;
+}
+
+.s03-div7 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+
+/* a08 */
+.s03-div8{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s03-img8{
+    position: absolute;
+    top: 5px;
+    align-self: center;
+    width: 200px;
+    height: 325px;
+    opacity: 0;
+    transition: all .2s;
+    transition-delay: .2s;
+    background: url('../images/kanu-product-main08.png') center center;
+}
+
+.s03-div8 p{
+    position: absolute;
+    top: 300px;
+    align-self: center;
+    opacity: 0;
+    transition: all .3s;
+    transition-delay: .2s
+}
+/* // section03 animation */
+
+.s03-div::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 370px;
+    background-color: red;
+}
+
+.s03-div-end{
+    content: "";
+    left: 70px;
+    width: 1px;
+    height: 370px;
+    background-color: red;
+}
+
+/* section04 */
+
+.section04{
+    margin-top: 100px;
+    padding: 150px 0;
+}
+
+.sec04-w{
+    width: 800px;
+    margin: auto;
+}
+
+.th-padding{
+    padding: 10px;
+}
+
+.thi{
+    width: 100%;
+    background: url(../images/play-bg.jpg) center center no-repeat black ;
+}
+
+.thi img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all .3s;
+}
+
+/* .modal-pop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* .modal-pop{
+    position: fixed;
+    text-align: center;
+    transform: translateY(-80%);
+    display: none;
+} */
+
+.modal-pop{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+.modal-pop p{
+    font-size: 4rem;
+    padding: 20px;
+    color: red;
+}
+
+
+/* section05 */
+.section05{
+    margin-bottom: 250px;
+}
+.section05 h1{
+    margin-bottom: 80px;
+}
+.section05 .one{
+    margin-bottom: 50px;
+}
+.sec05-box{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec05-info{
+    background-color: #DFD5C8;
+}
+.sec05-red{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+.sec05-info h5{
+    margin-bottom: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    position: relative;
+}
+.sec05-info h5::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background-color: red;
+}
+.sec05-info p{
+    color: rgb(58, 58, 58);
+}
+/* section06 */
+
+.section06{
+    margin-bottom: 250px;
+}
+.section06 .product-text{
+    margin-bottom: 50px;
+}
+.sec06-info{
+    margin-bottom: 20px;
+}
+.sec06-info .num{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 30px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 100%;
+    text-align: center;
+    flex-shrink: 0;
+}
+.sec06-info .num h5{
+    line-height: 55px;
+}
+.sec06-info .text{
+    margin-left: 10px;
+}
+.sec06-info .text h3{
+    line-height: 55px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+@media(max-width:1000px){
+    nav{
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .video-bg{
+        width: 70%;
+    }
+    .sec02-img{
+        width: 20%;
+    }
+    .sec02-wrap {
+        width: 65%;
+    }
+    .sec03-div{
+        overflow-x: scroll;
+    }
+
+    .sec04-w{
+        flex-wrap: wrap;
+    }
+
+    .thi{
+        height: 300px;
+    }
+}
+
+@media(min-width:800px){
+    
+    .btn{
+        display: none;
+    }
+}
+
+@media(max-width:800px){
+    .container{
+        width: 95%;
+    }
+    .gnb{
+        display: none;
+    }
+    .section03 .row{
+        flex-direction: column;
+    }
+    .section03 .kanu-title{
+        margin-bottom: 50px;
+    }
+    .sec05-info h5{
+        font-size: 24px;
+    }
+    .sec05-box{
+        height: 200px;
+        padding: 0 20px;
+    }
+    .row:not(.one) .sec05-box:nth-child(1){
+        padding-left: 0;
+    }
+    .row:not(.one) .sec05-box:nth-child(3){
+        padding-right: 0;
+    }
+    .sec05-info p{
+        font-size: 13px;
+    }
+    
+}
+
+@media(max-width:500px){
+    .logo img{
+        height: 30px;
+    }
+    .video-po{
+        display: none;
+    }
+    .video-deco{
+        height: 500px;
+    }
+    .video-bg{
+        height: 250px;
+    }
+    .video-text h1{
+        font-size: 45px;
+        margin-bottom:20px
+    }
+    .video-text p{
+        font-size: 16px;
+    }
+    .video-deco::before {
+        top: 70px;
+        height: 100px;
+    }
+    .video-deco::after {
+        top: 330px;
+        height: 100px;
+    }
+    .main-bg{
+        width: 100%;
+        height: 500px;
+        background: url(../images/mobile-main-bg02.jpg) center center no-repeat;
+    }
+    /* .content{
+        margin: 30px auto;
+    } */
+    .product-text{
+        margin-bottom: 50px;
+    }
+    .section02{
+        margin: 0;
+        padding: 100px 0;
+    }
+    .section02 .row{
+        flex-direction: column;
+    }
+    .sec02-img{
+        display: none;
+    }
+    .sec02-wrap {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .section02 h5{
+        font-size: 24px;
+    }
+    .sec03-div{
+        width: 90%;
+    }
+    .s03-div{
+        width: 40px;
+    }
+    .section03 .kanu-title {
+        margin-bottom: 0;
+    }
+    .s03-div:hover{
+        width: 250px;
+    }
+
+    .thi{
+        height: 200px;
+    }
+    .section05 h1 {
+        margin-bottom: 50px;
+    }
+    .sec05-slider{
+        width: 90%;
+    }
+    .sec05-box:not(.sec05-info){
+        display: none;
+    }
+    .sec05-box:nth-child(1){
+        margin-bottom: 20px;
+    }
+    .section05 .one {
+        margin-bottom: 20px;
+    }
+    .section06 .row{
+        justify-content: center;
+    }
+    .sec06-info .num{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .sec06-info .num h5{
+        line-height: 27px;
+    }
+    .section06 .sec06-info h3{
+        text-align: center;
+        font-size: 20px
+    }
+}
+
