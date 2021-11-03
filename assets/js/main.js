@@ -2,7 +2,28 @@ $('.btn').click(function(){
     $('.gnb').slideToggle()
 })
 
+AOS.init();
 
+$(window).on('scroll',function(){
+    let point = $(window).scrollTop();
+    // console.log(point)
+    if($(window).width() > 1000){
+        if(point > 600){
+            $('nav').slideDown({
+                start: function () {
+                    $(this).css({
+                      display: "flex"
+                    });
+                }
+            })
+                
+        } else {
+            $('nav').slideUp();
+        }
+    } else {
+        $('nav').css('display','flex');
+    }
+})
 
 // section03 animation
 

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            color: aliceblue;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 10px;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        .se01 {
+            background-color: blanchedalmond;
+        }
+
+        .se02 {
+            background-color: burlywood;
+        }
+
+        .se03 {
+            background-color: saddlebrown;
+        }
+
+        .box {
+            position: relative;
+            width: 50%;
+            height: 500px;
+            top: 100px;
+            left: 200px;
+        }
+
+        .box-m {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+            transition: all 0.5s;
+        }
+
+        .box-m:hover {
+            background-color: black;
+            opacity: 0;
+        }
+
+        .box-i {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(sec05-05.jpg) center;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>manu1</li>
+                <li>manu2</li>
+                <li>manu3</li>
+                <li>manu4</li>
+                <li>manu5</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="se01">
+        <div class="box">
+            <div class="box-i"></div>
+            <div class="box-m"></div>
+        </div>
+    </section>
+    <section class="se02"></section>
+    <section class="se03"></section>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+
+        $(window).on('scroll',function(){
+            let point = $(window).scrollTop();
+            console.log(point)
+            if(point > 300){
+                $('nav').slideDown();
+            } else {
+                $('nav').slideUp();
+            }
+        })
+
+        // window.onscroll = scrollF();
+
+        // function scrollF(){
+        //     if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+        //         document.querySelector('nav').style.top = 0;
+        //         console.log('it work')
+        //     } else {
+        //         document.querySelector('nav').style.top = '-200px';
+        //         console.log('it working!!')
+        //     }
+        // }
+    </script>
+
+    <script>
+        // $(function () {
+
+        //     var vi = 1200;  // 하단에 메뉴 표시할 스크롤 위치값 지정
+        //     var nav_y = $(".nav").offset().top + $(".nav").height();
+
+
+        //     $(window).scroll(function () {
+        //         var num = $(window).scrollTop();
+        //         if (num > nav_y) {
+        //             if (num > vi) {
+        //                 $(".nav").css({ "position": "fixed", "top": "0px", "left": "0px" }).fadeIn();
+        //             } else {
+        //                 $(".nav").fadeOut();
+        //             }
+        //         } else {
+        //             $(".nav").finish().css({ "position": "static", "display": "block" });
+        //         }
+        //     });
+
+        // });
+    </script>
+</body>
+
+</html>
