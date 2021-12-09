@@ -1,3 +1,10 @@
+$('.modal>div').click(function() {
+    $('.modal').css('display','none');
+})
+
+
+
+
 $('.btn').click(function(){
     $('.gnb').slideToggle()
 })
